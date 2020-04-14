@@ -1,2 +1,2 @@
 # jerrywang_note
-个人笔记的gitbook
+这是jerrywang的云笔记

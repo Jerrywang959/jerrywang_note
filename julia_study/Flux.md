@@ -8,7 +8,7 @@ description: Julia Flux Pkg的学习笔记
 
 求导函数，亦称求梯度函数
 
-基本用法
+### 基本用法
 
 **df(x) = gradient(f, x)**      
 
@@ -21,6 +21,14 @@ f为原函数，后面两个数组为函数的两个参数向量，该语句返�
 **gs=gradient(params(x, y))   do   f(x, y) end**
 
 通过处理参数集合`params`来获取导数
+
+## `params`
+
+返回函数参数的函数
+
+## `update`
+
+按照一定的方式更新网络参数
 
 
 

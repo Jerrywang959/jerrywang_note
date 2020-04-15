@@ -5,5 +5,5 @@
 
 ## Julia\_study
 
-* [Untitled](julia_study/untitled.md)
+* [Flux](julia_study/untitled.md)
 

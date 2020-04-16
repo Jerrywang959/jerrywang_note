@@ -2,7 +2,7 @@
 description: Julia控制句法
 ---
 
-# Loops
+# Control flow
 
 ## While循环语句
 
@@ -133,5 +133,80 @@ C = [i + j for i in 1:m, j in 1:n]
  4  5  6  7   8
  5  6  7  8   9
  6  7  8  9  10
+```
+
+## If条件语句
+
+```julia
+if *condition 1*
+    *option 1*
+elseif *condition 2*
+    *option 2*
+else
+    *option 3*
+end
+```
+
+#### 举例
+
+```julia
+julia> N =4
+4
+
+julia> if (N % 3 == 0) && (N % 5 == 0) # `&&` means "AND"; % computes the remainder after division
+           println("FizzBuzz")
+       elseif N % 3 == 0
+           println("Fizz")
+       elseif N % 5 == 0
+           println("Buzz")
+       else
+           println(N)
+       end
+4
+```
+
+### if语句的其他形式
+
+#### 三元运算符
+
+```julia
+a ? b : c
+```
+这等同于
+
+```julia
+if a
+    b
+else
+    c
+end
+```
+#### 使用语句连接符
+
+```julia
+julia> x=3
+3
+
+julia> (x > 0) && error("x cannot be greater than 0")
+ERROR: x cannot be greater than 0
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] top-level scope at REPL[8]:1
+
+julia> x=-4
+-4
+
+julia> (x > 0) && error("x cannot be greater than 0")
+false
+```
+
+
+
+```julia
+julia> true || println("hi")
+true
+
+julia> false || println("hi")
+hi
 ```
 

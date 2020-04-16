@@ -10,7 +10,7 @@
   * [Basic_gammer](julia_study/Base/Basic_gammer.md)
   * [String](julia_study/Base/String.md)
   * [DataStructure](julia_study/Base/DataStructure.md)
-  * [Loops](julia_study/Base/Loops.md)
+  * [Control_flow](julia_study/Base/Control_flow.md)
 * [Flux](julia_study/Flux/README.md)
   * [Fuctions](julia_study/Flux/Fuctions.md)
 

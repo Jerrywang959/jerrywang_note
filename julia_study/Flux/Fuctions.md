@@ -1,5 +1,5 @@
 ---
-description: Julia Flux Pkg的学习笔记
+description: Julia Flux Pkg中的函数用法
 ---
 
 # Fuctions

@@ -1,7 +1,7 @@
 {
     "plugins": ["chapter-fold","code", "back-to-top-button","chapter-fold","splitter",
     "pageview-count","tbfed-pagefooter","-lunr", "-search", "search-pro",
-    "-sharing", "sharing-plus","page-treeview"],
+    "-sharing", "sharing-plus"],
 
     "pluginsConfig": {
       "tbfed-pagefooter": {

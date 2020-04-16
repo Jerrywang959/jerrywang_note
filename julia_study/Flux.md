@@ -34,6 +34,3 @@ f为原函数，后面两个数组为函数的两个参数向量，该语句返�
 
 
 
-参考文献：
-
-[Flux官方文档](<https://fluxml.ai/Flux.jl/stable/>)

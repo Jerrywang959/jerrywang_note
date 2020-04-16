@@ -5,5 +5,9 @@
 
 ## Julia\_study
 
+* [Readme](julia_study/Readme.md)
 * [Flux](julia_study/Flux.md)
+* [Basic](julia_study/Basic_gammer.md)
+* [String](julia_study/String.md)
+* [DataStructure](julia_study/DataStructure.md)
 

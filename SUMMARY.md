@@ -14,9 +14,5 @@
 * [Flux](julia_study/Flux/README.md)
   * [Fuctions](julia_study/Flux/Fuctions.md)
 
-## Diary
 
-* [README](Diary/README.md)
-* [2020-04](Diary/2020-04/2020-04-sum.md)
-  * [2020-04-16](Diary/2020-04/2020-04-16.md)
 

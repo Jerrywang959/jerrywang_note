@@ -45,6 +45,10 @@
                 
             
                 
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -307,13 +311,13 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="control-flow">Control flow</h1>
-<h2 id="while&#x5FAA;&#x73AF;&#x8BED;&#x53E5;">While&#x5FAA;&#x73AF;&#x8BED;&#x53E5;</h2>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#control-flow"><b></b>Control flow</a></li><ul><li><span class="title-icon "></span><a href="#while&#x5FAA;&#x73AF;&#x8BED;&#x53E5;"><b></b>While&#x5FAA;&#x73AF;&#x8BED;&#x53E5;</a></li><li><span class="title-icon "></span><a href="#for&#x5FAA;&#x73AF;&#x8BED;&#x53E5;"><b></b>For&#x5FAA;&#x73AF;&#x8BED;&#x53E5;</a></li><ul><li><span class="title-icon "></span><a href="#for&#x8BED;&#x53E5;&#x7684;&#x5176;&#x4ED6;&#x5F62;&#x5F0F;"><b></b>for&#x8BED;&#x53E5;&#x7684;&#x5176;&#x4ED6;&#x5F62;&#x5F0F;</a></li></ul><li><span class="title-icon "></span><a href="#if&#x6761;&#x4EF6;&#x8BED;&#x53E5;"><b></b>If&#x6761;&#x4EF6;&#x8BED;&#x53E5;</a></li><ul><li><span class="title-icon "></span><a href="#if&#x8BED;&#x53E5;&#x7684;&#x5176;&#x4ED6;&#x5F62;&#x5F0F;"><b></b>if&#x8BED;&#x53E5;&#x7684;&#x5176;&#x4ED6;&#x5F62;&#x5F0F;</a></li></ul></ul></ul></div><h1 id="control-flow"><a name="control-flow" class="anchor-navigation-ex-anchor" href="#control-flow"><i class="fa fa-link" aria-hidden="true"></i></a>Control flow</h1>
+<h2 id="while&#x5FAA;&#x73AF;&#x8BED;&#x53E5;"><a name="while&#x5FAA;&#x73AF;&#x8BED;&#x53E5;" class="anchor-navigation-ex-anchor" href="#while&#x5FAA;&#x73AF;&#x8BED;&#x53E5;"><i class="fa fa-link" aria-hidden="true"></i></a>While&#x5FAA;&#x73AF;&#x8BED;&#x53E5;</h2>
 <pre><code class="lang-julia"><span class="hljs-keyword">while</span> *condition*
     *loop body*
 <span class="hljs-keyword">end</span>
 </code></pre>
-<h4 id="&#x4E3E;&#x4F8B;">&#x4E3E;&#x4F8B;</h4>
+<h4 id="&#x4E3E;&#x4F8B;"><a name="&#x4E3E;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#&#x4E3E;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E3E;&#x4F8B;</h4>
 <pre><code class="lang-julia"><span class="hljs-keyword">while</span> n &lt; <span class="hljs-number">10</span>
     n += <span class="hljs-number">1</span>
     println(n)
@@ -345,12 +349,12 @@ Hi Barney, it&apos;s great to see you!
 Hi Lily, it&apos;s great to see you!
 Hi Marshall, it&apos;s great to see you!
 </code></pre>
-<h2 id="for&#x5FAA;&#x73AF;&#x8BED;&#x53E5;">For&#x5FAA;&#x73AF;&#x8BED;&#x53E5;</h2>
+<h2 id="for&#x5FAA;&#x73AF;&#x8BED;&#x53E5;"><a name="for&#x5FAA;&#x73AF;&#x8BED;&#x53E5;" class="anchor-navigation-ex-anchor" href="#for&#x5FAA;&#x73AF;&#x8BED;&#x53E5;"><i class="fa fa-link" aria-hidden="true"></i></a>For&#x5FAA;&#x73AF;&#x8BED;&#x53E5;</h2>
 <pre><code class="lang-julia"><span class="hljs-keyword">for</span> *var* <span class="hljs-keyword">in</span> *loop iterable*
     *loop body*
 <span class="hljs-keyword">end</span>
 </code></pre>
-<h4 id="&#x4E3E;&#x4F8B;">&#x4E3E;&#x4F8B;</h4>
+<h4 id="&#x4E3E;&#x4F8B;_1"><a name="&#x4E3E;&#x4F8B;_1" class="anchor-navigation-ex-anchor" href="#&#x4E3E;&#x4F8B;_1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E3E;&#x4F8B;</h4>
 <pre><code class="lang-julia">myfriends = [<span class="hljs-string">&quot;Ted&quot;</span>, <span class="hljs-string">&quot;Robyn&quot;</span>, <span class="hljs-string">&quot;Barney&quot;</span>, <span class="hljs-string">&quot;Lily&quot;</span>, <span class="hljs-string">&quot;Marshall&quot;</span>]
 
 <span class="hljs-keyword">for</span> friend <span class="hljs-keyword">in</span> myfriends
@@ -387,7 +391,7 @@ A
  <span class="hljs-number">5</span>  <span class="hljs-number">6</span>  <span class="hljs-number">7</span>  <span class="hljs-number">8</span>   <span class="hljs-number">9</span>
  <span class="hljs-number">6</span>  <span class="hljs-number">7</span>  <span class="hljs-number">8</span>  <span class="hljs-number">9</span>  <span class="hljs-number">10</span>
 </code></pre>
-<h3 id="for&#x8BED;&#x53E5;&#x7684;&#x5176;&#x4ED6;&#x5F62;&#x5F0F;">for&#x8BED;&#x53E5;&#x7684;&#x5176;&#x4ED6;&#x5F62;&#x5F0F;</h3>
+<h3 id="for&#x8BED;&#x53E5;&#x7684;&#x5176;&#x4ED6;&#x5F62;&#x5F0F;"><a name="for&#x8BED;&#x53E5;&#x7684;&#x5176;&#x4ED6;&#x5F62;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#for&#x8BED;&#x53E5;&#x7684;&#x5176;&#x4ED6;&#x5F62;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>for&#x8BED;&#x53E5;&#x7684;&#x5176;&#x4ED6;&#x5F62;&#x5F0F;</h3>
 <pre><code class="lang-julia">B = fill(<span class="hljs-number">0</span>, (m, n))
 
 &gt;<span class="hljs-number">5</span>&#xD7;<span class="hljs-number">5</span> <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">2</span>}:
@@ -418,7 +422,7 @@ B
  <span class="hljs-number">5</span>  <span class="hljs-number">6</span>  <span class="hljs-number">7</span>  <span class="hljs-number">8</span>   <span class="hljs-number">9</span>
  <span class="hljs-number">6</span>  <span class="hljs-number">7</span>  <span class="hljs-number">8</span>  <span class="hljs-number">9</span>  <span class="hljs-number">10</span>
 </code></pre>
-<h2 id="if&#x6761;&#x4EF6;&#x8BED;&#x53E5;">If&#x6761;&#x4EF6;&#x8BED;&#x53E5;</h2>
+<h2 id="if&#x6761;&#x4EF6;&#x8BED;&#x53E5;"><a name="if&#x6761;&#x4EF6;&#x8BED;&#x53E5;" class="anchor-navigation-ex-anchor" href="#if&#x6761;&#x4EF6;&#x8BED;&#x53E5;"><i class="fa fa-link" aria-hidden="true"></i></a>If&#x6761;&#x4EF6;&#x8BED;&#x53E5;</h2>
 <pre><code class="lang-julia"><span class="hljs-keyword">if</span> *condition <span class="hljs-number">1</span>*
     *option <span class="hljs-number">1</span>*
 <span class="hljs-keyword">elseif</span> *condition <span class="hljs-number">2</span>*
@@ -427,7 +431,7 @@ B
     *option <span class="hljs-number">3</span>*
 <span class="hljs-keyword">end</span>
 </code></pre>
-<h4 id="&#x4E3E;&#x4F8B;">&#x4E3E;&#x4F8B;</h4>
+<h4 id="&#x4E3E;&#x4F8B;_2"><a name="&#x4E3E;&#x4F8B;_2" class="anchor-navigation-ex-anchor" href="#&#x4E3E;&#x4F8B;_2"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E3E;&#x4F8B;</h4>
 <pre><code class="lang-julia">julia&gt; N =<span class="hljs-number">4</span>
 <span class="hljs-number">4</span>
 
@@ -442,8 +446,8 @@ julia&gt; <span class="hljs-keyword">if</span> (N % <span class="hljs-number">3<
        <span class="hljs-keyword">end</span>
 <span class="hljs-number">4</span>
 </code></pre>
-<h3 id="if&#x8BED;&#x53E5;&#x7684;&#x5176;&#x4ED6;&#x5F62;&#x5F0F;">if&#x8BED;&#x53E5;&#x7684;&#x5176;&#x4ED6;&#x5F62;&#x5F0F;</h3>
-<h4 id="&#x4E09;&#x5143;&#x8FD0;&#x7B97;&#x7B26;">&#x4E09;&#x5143;&#x8FD0;&#x7B97;&#x7B26;</h4>
+<h3 id="if&#x8BED;&#x53E5;&#x7684;&#x5176;&#x4ED6;&#x5F62;&#x5F0F;"><a name="if&#x8BED;&#x53E5;&#x7684;&#x5176;&#x4ED6;&#x5F62;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#if&#x8BED;&#x53E5;&#x7684;&#x5176;&#x4ED6;&#x5F62;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>if&#x8BED;&#x53E5;&#x7684;&#x5176;&#x4ED6;&#x5F62;&#x5F0F;</h3>
+<h4 id="&#x4E09;&#x5143;&#x8FD0;&#x7B97;&#x7B26;"><a name="&#x4E09;&#x5143;&#x8FD0;&#x7B97;&#x7B26;" class="anchor-navigation-ex-anchor" href="#&#x4E09;&#x5143;&#x8FD0;&#x7B97;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E09;&#x5143;&#x8FD0;&#x7B97;&#x7B26;</h4>
 <pre><code class="lang-julia">a ? b : c
 </code></pre>
 <p>&#x8FD9;&#x7B49;&#x540C;&#x4E8E;</p>
@@ -453,7 +457,7 @@ julia&gt; <span class="hljs-keyword">if</span> (N % <span class="hljs-number">3<
     c
 <span class="hljs-keyword">end</span>
 </code></pre>
-<h4 id="&#x4F7F;&#x7528;&#x8BED;&#x53E5;&#x8FDE;&#x63A5;&#x7B26;">&#x4F7F;&#x7528;&#x8BED;&#x53E5;&#x8FDE;&#x63A5;&#x7B26;</h4>
+<h4 id="&#x4F7F;&#x7528;&#x8BED;&#x53E5;&#x8FDE;&#x63A5;&#x7B26;"><a name="&#x4F7F;&#x7528;&#x8BED;&#x53E5;&#x8FDE;&#x63A5;&#x7B26;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;&#x8BED;&#x53E5;&#x8FDE;&#x63A5;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;&#x8BED;&#x53E5;&#x8FDE;&#x63A5;&#x7B26;</h4>
 <pre><code class="lang-julia">julia&gt; x=<span class="hljs-number">3</span>
 <span class="hljs-number">3</span>
 
@@ -520,7 +524,7 @@ hi
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"description":"Julia控制句法","title":"Control_flow","level":"2.2.4","depth":2,"next":{"title":"Flux","level":"2.3","depth":1,"path":"julia_study/Flux/README.md","ref":"julia_study/Flux/README.md","articles":[{"title":"Fuctions","level":"2.3.1","depth":2,"path":"julia_study/Flux/Fuctions.md","ref":"julia_study/Flux/Fuctions.md","articles":[]}]},"previous":{"title":"DataStructure","level":"2.2.3","depth":2,"path":"julia_study/Base/DataStructure.md","ref":"julia_study/Base/DataStructure.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["chapter-fold","code","back-to-top-button","chapter-fold","splitter","pageview-count","tbfed-pagefooter","-lunr","-search","search-pro","-sharing","sharing-plus","livereload"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy jerrywang 2020","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"livereload":{},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"sharing":{"qq":true,"all":["douban","facebook","google","instapaper","linkedin","twitter","weibo","messenger","qq","qzone","viber","whatsapp"],"douban":true,"facebook":false,"weibo":true,"twitter":true,"pocket":false,"google":true,"qzone":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"julia_study/Base/Control_flow.md","mtime":"2020-04-16T18:21:50.762Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-16T18:40:35.457Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"description":"Julia控制句法","title":"Control_flow","level":"2.2.4","depth":2,"next":{"title":"Flux","level":"2.3","depth":1,"path":"julia_study/Flux/README.md","ref":"julia_study/Flux/README.md","articles":[{"title":"Fuctions","level":"2.3.1","depth":2,"path":"julia_study/Flux/Fuctions.md","ref":"julia_study/Flux/Fuctions.md","articles":[]}]},"previous":{"title":"DataStructure","level":"2.2.3","depth":2,"path":"julia_study/Base/DataStructure.md","ref":"julia_study/Base/DataStructure.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["chapter-fold","code","back-to-top-button","chapter-fold","splitter","pageview-count","tbfed-pagefooter","-lunr","-search","search-pro","-sharing","sharing-plus","anchor-navigation-ex","livereload"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy jerrywang 2020","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"livereload":{},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":false},"back-to-top-button":{},"pageview-count":{},"sharing":{"qq":true,"all":["douban","facebook","google","instapaper","linkedin","twitter","weibo","messenger","qq","qzone","viber","whatsapp"],"douban":true,"facebook":false,"weibo":true,"twitter":true,"pocket":false,"google":true,"qzone":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"julia_study/Base/Control_flow.md","mtime":"2020-04-16T18:21:50.762Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-16T19:01:06.449Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

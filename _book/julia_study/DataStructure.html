@@ -57,6 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="Loops.html" />
+    
     
     <link rel="prev" href="String.html" />
     
@@ -133,20 +135,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2" data-path="Flux.html">
-            
-                <a href="Flux.html">
-            
-                    
-                    Flux
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.3" data-path="Basic_gammer.html">
+        <li class="chapter " data-level="2.2" data-path="Basic_gammer.html">
             
                 <a href="Basic_gammer.html">
             
@@ -159,7 +148,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4" data-path="String.html">
+        <li class="chapter " data-level="2.3" data-path="String.html">
             
                 <a href="String.html">
             
@@ -172,12 +161,38 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.5" data-path="DataStructure.html">
+        <li class="chapter active" data-level="2.4" data-path="DataStructure.html">
             
                 <a href="DataStructure.html">
             
                     
                     DataStructure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="Loops.html">
+            
+                <a href="Loops.html">
+            
+                    
+                    Loops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="Flux.html">
+            
+                <a href="Flux.html">
+            
+                    
+                    Flux
             
                 </a>
             
@@ -274,7 +289,10 @@ julia&gt; myfavoriteanimals.bird
 <span class="hljs-string">&quot;867-5309&quot;</span>
 </code></pre>
 <h4 id="&#x589E;&#x52A0;&#x5B57;&#x5178;&#x5185;&#x5BB9;">&#x589E;&#x52A0;&#x5B57;&#x5178;&#x5185;&#x5BB9;</h4>
-<pre><code class="lang-julia">julia&gt; myphonebook
+<pre><code class="lang-julia">julia&gt; myphonebook[<span class="hljs-string">&quot;Kramer&quot;</span>]=<span class="hljs-string">&quot;555-FILK&quot;</span>
+<span class="hljs-string">&quot;555-FILK&quot;</span>
+
+julia&gt; myphonebook
 <span class="hljs-built_in">Dict</span>{<span class="hljs-built_in">String</span>,<span class="hljs-built_in">String</span>} with <span class="hljs-number">3</span> entries:
   <span class="hljs-string">&quot;Jenny&quot;</span>        =&gt; <span class="hljs-string">&quot;867-5309&quot;</span>
   <span class="hljs-string">&quot;Kramer&quot;</span>       =&gt; <span class="hljs-string">&quot;555-FILK&quot;</span>
@@ -487,10 +505,14 @@ julia&gt; fibonacci
 
             
                 
-                <a href="String.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: String">
+                <a href="String.html" class="navigation navigation-prev " aria-label="Previous page: String">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="Loops.html" class="navigation navigation-next " aria-label="Next page: Loops">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -499,7 +521,7 @@ julia&gt; fibonacci
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"description":"Julia的数据结构","title":"DataStructure","level":"2.5","depth":1,"previous":{"title":"String","level":"2.4","depth":1,"path":"julia_study/String.md","ref":"julia_study/String.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"julia_study/DataStructure.md","mtime":"2020-04-16T02:11:11.259Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-16T01:42:47.387Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"description":"Julia的数据结构","title":"DataStructure","level":"2.4","depth":1,"next":{"title":"Loops","level":"2.5","depth":1,"path":"julia_study/Loops.md","ref":"julia_study/Loops.md","articles":[]},"previous":{"title":"String","level":"2.3","depth":1,"path":"julia_study/String.md","ref":"julia_study/String.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"julia_study/DataStructure.md","mtime":"2020-04-16T02:34:51.357Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-16T02:19:12.668Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

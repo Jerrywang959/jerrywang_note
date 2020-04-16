@@ -76,6 +76,9 @@ julia> myphonebook["Jenny"]
 #### 增加字典内容
 
 ```julia
+julia> myphonebook["Kramer"]="555-FILK"
+"555-FILK"
+
 julia> myphonebook
 Dict{String,String} with 3 entries:
   "Jenny"        => "867-5309"

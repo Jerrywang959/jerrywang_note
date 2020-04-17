@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [第一章](di-yi-zhang.md)
 * [Regular Expression](Regular_Expression.md)
 
 ## Julia\_study

@@ -2,7 +2,7 @@
 description: Julia_study group的介绍
 ---
 
-# Readme
+# Introduction
 
 这一group是jerrywang的julia学习笔记，在这里列出该group下的所有参考文献
 

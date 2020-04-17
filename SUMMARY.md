@@ -11,8 +11,9 @@
   * [String](julia_study/Base/String.md)
   * [DataStructure](julia_study/Base/DataStructure.md)
   * [Control_flow](julia_study/Base/Control_flow.md)
+  * [Functions](julia_study/Base/Functions.md)
 * [Flux](julia_study/Flux/README.md)
-  * [Fuctions](julia_study/Flux/Fuctions.md)
+  * [Functions](julia_study/Flux/Functions.md)
 
 
 

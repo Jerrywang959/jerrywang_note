@@ -10,7 +10,7 @@ description: 正则表达式的学习笔记
 
 ## 基本结构 
 
-![UTOOLS1587106179440.png](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/UTOOLS1587106179440.png)
+![正则表达式基本结构](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/UTOOLS1587106179440.png)
 
 ### 限定符
 

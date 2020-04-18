@@ -1,6 +1,6 @@
 # Introduction
 
-这是jerrywang的云笔记
+这是jerrywang的云笔记，主要用于个人整理知识和复习，很多东西都是直接在网上直接copy过来的，若有侵权，请联系w767729940@gmail.com删除。
 
 # 为什么用gitbook
 

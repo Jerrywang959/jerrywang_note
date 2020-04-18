@@ -2,6 +2,8 @@
 
 这是jerrywang的云笔记，主要用于个人整理知识和复习，很多东西都是直接在网上直接copy过来的，若有侵权，请联系w767729940@gmail.com删除。
 
+此笔记的gitbook托管页面[yunnote.club](https://yunnote.club)
+
 # 为什么用gitbook
 
 1. 记笔记的目的本身就是在有需要时检索，放在公网上易于访问，也有可能帮助到有需要的人。

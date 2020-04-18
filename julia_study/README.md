@@ -22,6 +22,7 @@ Status `~/.julia/environments/v1.4/Project.toml`
   [c52e3926] Atom v0.12.10
   [fbb218c0] BSON v0.2.5
   [6e4b80f9] BenchmarkTools v0.5.0
+  [ad839575] Blink v0.12.3
   [336ed68f] CSV v0.6.1
   [3895d2a7] CUDAapi v4.0.0
   [c5f51814] CUDAdrv v6.2.2
@@ -41,19 +42,21 @@ Status `~/.julia/environments/v1.4/Project.toml`
   [91a5bcdd] Plots v1.0.11
   [438e738f] PyCall v1.91.4
   [1d978283] TensorFlow v0.11.0
-  [0f1e0344] WebIO v0.8.11
+  [b8865327] UnicodePlots v1.1.0
+  [0f1e0344] WebIO v0.8.13
   [de0858da] Printf 
   [9a3f8284] Random 
   [10745b16] Statistics 
+
 ```
 
 
 
 
 
-# 参考文献
+# 参考资料
 
-在这里列出该group下的所有参考文献
+在这里列出该group下的所有参考资料
 
 ## 官方文档
 

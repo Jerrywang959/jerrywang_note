@@ -15,6 +15,7 @@
   * [Package](julia_study/Base/Packages.md)
   * [Plotting](julia_study/Base/Plotting.md)
   * [Multiple_Dispatch](julia_study/Base/Multiple_Dispatch.md)
+  * [Factorizations](julia_study/Base/Factorizations.md)
 * [LinearAlgebra](julia_study/LinearAlgebra/README.md)
   * [Basic](julia_study/LinearAlgebra/Basic.md)
 * [Flux](julia_study/Flux/README.md)

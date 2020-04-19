@@ -6,7 +6,11 @@ description: Julia_study group的介绍
 
 这一group是jerrywang的julia学习笔记
 
+# 为什么选择Julia
 
+1. 他真的很好：快、学起来没那么难
+2. 专为科学计算而生，甚至对标金融，跟我的方向有些相符
+3. 我并不精通任何一门语言，机会成本很低，刚开始学习，希望学习一门有发展潜力的语言。
 
 # Julia环境
 
@@ -74,3 +78,8 @@ Status `~/.julia/environments/v1.4/Project.toml`
 ## Github Issue
 
 1. [Error with unicode labels in GR backend](<https://github.com/JuliaPlots/Plots.jl/issues/791>)
+
+## 百科
+
+1. [维基百科-LU分解](<https://zh.wikipedia.org/wiki/LU%E5%88%86%E8%A7%A3>)
+2. [维基百科-QR分解](<https://zh.wikipedia.org/wiki/QR%E5%88%86%E8%A7%A3>)

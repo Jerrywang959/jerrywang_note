@@ -10,7 +10,6 @@
 
 # 相关链接
 
-1. 个人博客[jerrywang.top](https://jerrywang.top)
-2. 此笔记的github page托管页面[note.jerywang.top](https://note.jerrywang.top)
-3. 此笔记的gitbook托管页面[yunnote.club](https://yunnote.club)
-
+1. [个人博客](https://jerrywang.top)
+2. [此笔记的github page托管页面](https://note.jerrywang.top)
+3. [此笔记的gitbook托管页面](https://yunnote.club)

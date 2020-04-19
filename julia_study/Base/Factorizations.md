@@ -14,7 +14,7 @@ $$
 PA = LU
 $$
 
-$A$是被分解的矩阵，$P$是置换矩阵，$L$是下三角矩阵，$U$是上三角矩阵。
+$$A$$ 是被分解的矩阵，$$P$$ 是置换矩阵，$$L$$ 是下三角矩阵，$$U$$是上三角矩阵。
 
 
 
@@ -98,7 +98,7 @@ $$
 A=QR
 $$
 
-$A$为被分解的矩阵，$Q$是正交矩阵，$R$是上三角矩阵
+$$A$$ 为被分解的矩阵，$$Q$$是正交矩阵，$$R$$是上三角矩阵
 
 
 
@@ -121,7 +121,7 @@ R factor:
   0.0        0.0        0.0172691
 ```
 
-使用`.Q`,`.R`调用分解后的$Q$矩阵,$R$矩阵
+使用`.Q`,`.R`调用分解后的$$Q$$矩阵,$$R$$矩阵
 
 ```julia
 julia> Aqr.Q
@@ -180,7 +180,7 @@ julia> AsymEig.vectors
 
 
 
-Once again, when the factorization is stored in a type, we can dispatch on it and write specialized methods that exploit the properties of the factorization, e.g. that $A^{-1}=(V\Lambda V^{-1})^{-1}=V\Lambda^{-1}V^{-1}$.[^2]
+Once again, when the factorization is stored in a type, we can dispatch on it and write specialized methods that exploit the properties of the factorization, e.g. that $$    A^{-1}=(V\Lambda V^{-1})^{-1}=V\Lambda^{-1}V^{-1}$$.[^2]
 
 ```julia
 julia> inv(AsymEig)*Asym
@@ -196,4 +196,3 @@ julia> inv(AsymEig)*Asym
 
 [^1]: 我不太理解，因此保留英文
 [^2]: 这句话我也不懂，还是保留了英文
-

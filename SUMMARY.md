@@ -29,5 +29,7 @@
 * [DM-ML](Course_study/DM-ML/README.md)
   * [Homework](Course_study/DM-ML/Homework.md)
 * [Game_Thoery](Course_study/Game_Thoery/README.md)
-  * [Introduction](Course_study/Game_Thoery/Introduction.md)
   * [Basics](Course_study/Game_Thoery/Basics.md)
+* [Financial_Lecture](Course_study/Financial_Lecture/README.md)
+  * [Learn_from_ruixin](Course_study/Financial_Lecture/Learn_from_ruixin.md)
+

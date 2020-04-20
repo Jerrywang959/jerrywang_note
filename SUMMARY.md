@@ -1,3 +1,5 @@
+
+
 # Table of contents
 
 * [Introduction](README.md)
@@ -21,5 +23,8 @@
 * [Flux](julia_study/Flux/README.md)
   * [Functions](julia_study/Flux/Functions.md)
 
+## Course\_study
 
-
+* [README](Course_study/README.md)
+* [DM-ML](Course_study/DM-ML/README.md)
+  * [Homework](Course_study/DM-ML/Homework.md)

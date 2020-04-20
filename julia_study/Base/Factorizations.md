@@ -192,6 +192,36 @@ julia> inv(AsymEig)*Asym
 
 
 
+## Special matrix structures
+
+矩阵结构在线性代数中非常重要。要了解它的重要性，让我们使用更大的线性系统
+
+`issymmetric`检验一个矩阵是否是对称阵，并返回true or false
+
+```julia
+julia> using LinearAlgebra
+julia> n = 1000;
+julia> A = randn(n,n);
+julia> Asym = A + A';
+julia> issymmetric(Asym)
+true
+```
+
+```julia
+julia> Asym_noisy = copy(Asym);
+julia> Asym_noisy[1,2] += 5eps();
+julia> issymmetric(Asym_noisy);
+false
+```
+
+
+
+
+
+
+
+
+
 
 
 [^1]: 我不太理解，因此保留英文

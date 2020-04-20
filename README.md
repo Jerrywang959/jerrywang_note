@@ -8,6 +8,10 @@
 2. 通过gitbook撰写的非数据库markdown文档，更加具有掌控感。
 3. web应用易于扩展和移动，且服务器在国外可以无备案使用域名。
 
+# 欢迎pr
+
+若有书写错误或者补充的地方，可以fork[此项目github主页](<https://github.com/Jerrywang959/jerrywang_note>)修改并提交push request，只需要修改markdown文件即可。
+
 # 相关链接
 
 1. [个人博客](https://jerrywang.top)

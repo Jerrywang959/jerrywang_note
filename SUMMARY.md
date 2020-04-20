@@ -30,3 +30,4 @@
   * [Homework](Course_study/DM-ML/Homework.md)
 * [Game_Thoery](Course_study/Game_Thoery/README.md)
   * [Introduction](Course_study/Game_Thoery/Introduction.md)
+  * [Basics](Course_study/Game_Thoery/Basics.md)

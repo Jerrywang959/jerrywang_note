@@ -5,7 +5,7 @@
 **相关链接**
 
 1. [个人博客](https://jerrywang.top)
-2. [gitee page托管页面](<https://jerrywjy.gitee.io/jerrywang_note>)(国内访问较佳)
+2. [gitee page托管页面](https://jerrywjy.gitee.io/jerrywang_note)(国内访问较佳)
 3. [github page托管页面](https://note.jerrywang.top)
 4. [gitbook托管页面](https://yunnote.club)
 
@@ -18,7 +18,7 @@
 
 # 欢迎pr
 
-若有书写错误或者补充的地方，可以fork[此项目github主页](<https://github.com/Jerrywang959/jerrywang_note>)修改并提交push request，只需要修改markdown文件即可。
+若有书写错误或者补充的地方，可以fork[此项目github主页](https://github.com/Jerrywang959/jerrywang_note)修改并提交push request，只需要修改markdown文件即可。
 
 # License
 

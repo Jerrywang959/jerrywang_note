@@ -6,7 +6,7 @@
 
     "pluginsConfig": {
               "tbfed-pagefooter": {
-                  "copyright":"Copyright &copy jerrywang 2020",
+                  "copyright":"Protected by CC0-1.0 © Jerrywang 2020",
                   "modify_label": "该文章修订时间：",
                   "modify_format": "YYYY-MM-DD HH:mm:ss"
                             },

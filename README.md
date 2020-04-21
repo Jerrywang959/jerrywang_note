@@ -22,4 +22,4 @@
 
 # License
 
-[MIT](https://github.com/Jerrywang959/jerrywang_note/blob/master/LICENSE) © Jerry Wang
+[CC0-1.0](https://github.com/Jerrywang959/jerrywang_note/blob/master/LICENSE) © Jerry Wang

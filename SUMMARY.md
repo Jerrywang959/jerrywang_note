@@ -32,4 +32,8 @@
   * [Basics](Course_study/Game_Thoery/Basics.md)
 * [Financial_Lecture](Course_study/Financial_Lecture/README.md)
   * [Learn_from_ruixin](Course_study/Financial_Lecture/Learn_from_ruixin.md)
+* [International_Finance](Course_study/International_Finance/README.md)
+  * [Exchanges](Course_study/International_Finance/Exchanges.md)
+* [Random_process](Course_study/Random_process/README.md)
+  * [Basics](Course_study/Random_process/Basics.md)
 

@@ -1,7 +1,8 @@
 {
     "plugins": ["chapter-fold","code", "back-to-top-button","chapter-fold","splitter",
     "pageview-count","tbfed-pagefooter","-lunr", "-search", "search-pro",
-    "-sharing", "sharing-plus","anchor-navigation-ex","katex"],
+    "-sharing", "sharing-plus","anchor-navigation-ex","katex","theme-comscore","github",
+    "auto-scroll-table","popup"],
 
     "pluginsConfig": {
               "tbfed-pagefooter": {
@@ -25,5 +26,8 @@
               "anchor-navigation-ex": {
                   "showLevel": false,
                   "showGoTop": false
-                    } }
+                    },
+                    "github": {
+                        "url": "https://github.com/Jerrywang959"
+                 }}
 }

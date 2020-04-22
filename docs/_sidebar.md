@@ -18,6 +18,7 @@
 * [**Course_study**](Course_study/README.md)
   * [DM-ML](Course_study/DM-ML/README.md)
     * [Homework](Course_study/DM-ML/Homework.md)
+    * [Math_base](Course_study/DM-ML/Math_base.md)
   * [Game_Thoery](Course_study/Game_Thoery/README.md)
     * [Basics](Course_study/Game_Thoery/Basics.md)
   * [Financial_Lecture](Course_study/Financial_Lecture/README.md)

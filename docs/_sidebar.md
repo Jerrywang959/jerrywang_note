@@ -1,4 +1,3 @@
-* [**Home**](/)
 * [**Introduction**](README.md)
   * [Regular Expression](Regular_Expression.md)
 * [**Julia_study**](julia_study/README.md)

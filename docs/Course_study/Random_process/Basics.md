@@ -9,7 +9,7 @@ $$\Omega=\{\omega_1,\omega_2\}$$
 1. 无序
 2. 可数或者不可数
 
-$$\omega\in A\subseteq\Omega$$$$
+$$\omega\in A\subseteq\Omega$$
 
 
 

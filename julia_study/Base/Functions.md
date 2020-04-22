@@ -1,7 +1,3 @@
----
-description: 函数的基本用法
----
-
 # Functions
 
 ## Declare a function

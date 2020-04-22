@@ -1,7 +1,3 @@
----
-description: Julia pkg的使用和管理
----
-
 # Packages
 
 julia有专门的包管理工具——Pkg，可以用 ]进入pkg管理页面，也可以使用`using Pkg` `Pkg.xxx`来管理Pkg

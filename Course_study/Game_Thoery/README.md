@@ -1,7 +1,3 @@
----
-description: 课程简介
----
-
 # Intruduction
 
 课程教材：

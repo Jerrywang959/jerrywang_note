@@ -1,7 +1,3 @@
----
-description: 基本命令
----
-
 # Basic Gammer
 
 ## 多行注释

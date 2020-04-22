@@ -1,7 +1,3 @@
----
-description: Julia 的画图方法
----
-
 # Plotting
 
 ## Plots

@@ -1,7 +1,3 @@
----
-description: 正则表达式的学习笔记
----
-
 # Regular Expression
 
 ## 定义

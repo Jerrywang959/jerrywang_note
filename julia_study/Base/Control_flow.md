@@ -1,7 +1,3 @@
----
-description: Julia控制句法
----
-
 # Control flow
 
 ## While循环语句

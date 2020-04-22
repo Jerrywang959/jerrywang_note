@@ -1,7 +1,3 @@
----
-description: Julia Flux Pkg中的函数用法
----
-
 # Fuctions
 
 ## `gradient`

@@ -1,7 +1,3 @@
----
-description: Julia_study group的介绍
----
-
 # Introduction
 
 这一group是jerrywang的julia学习笔记

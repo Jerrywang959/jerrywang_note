@@ -1,7 +1,3 @@
----
-description: Julia因式分解函数
----
-
 # Factorizations
 
 因式分解相关函数，出现了一些我并不能看懂的线性代数方法。

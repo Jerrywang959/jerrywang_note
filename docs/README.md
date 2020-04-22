@@ -2,13 +2,7 @@
 
 这是jerrywang的云笔记，主要用于个人整理知识和复习，很多东西都是直接在网上直接copy过来的，若有侵权，请联系w767729940@gmail.com删除。
 
-**相关链接**
-
-1. [个人博客](https://jerrywang.top)
-2. [gitee page托管页面](https://jerrywjy.gitee.io/jerrywang_note)（国内访问更快）
-3. [github page托管页面](https://note.jerrywang.top)
-
-# Pages生产说明
+# Pages选择说明
 
 ## 为什么一开始用gitbook
 

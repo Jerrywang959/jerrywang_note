@@ -5,16 +5,22 @@
 **相关链接**
 
 1. [个人博客](https://jerrywang.top)
-2. [gitee page托管页面](https://jerrywjy.gitee.io/jerrywang_note)(国内访问较佳)
+2. [gitee page托管页面](https://jerrywjy.gitee.io/jerrywang_note)（国内访问更快）
 3. [github page托管页面](https://note.jerrywang.top)
-4. [gitbook托管页面](https://yunnote.club)
 
+# Pages生产说明
 
-# 为什么用gitbook
+## 为什么一开始用gitbook
 
 1. 记笔记的目的本身就是在有需要时检索，放在公网上易于访问，也有可能帮助到有需要的人。
 2. 通过gitbook撰写的非数据库markdown文档，更加具有掌控感。
 3. web应用易于扩展和移动，且服务器在国外可以无备案使用域名。
+
+## 为什么转向docsify
+
+1. 旧版gitbook已经被弃用，新版阉割了很多功能不说，国内访问比较困难（无法加CDN），而且本地化较弱，不具有掌控感。
+2. docsify基本具有了完善的功能，而且不生产html不会污染git。
+3. docsify的插件可以直接用免费公共cdn加入，不主动加国内CDN访问也很快。
 
 # 欢迎pr
 

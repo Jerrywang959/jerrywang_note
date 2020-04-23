@@ -55,8 +55,16 @@
 <!-- 美人鱼图 -->
       plantuml: {
          skin: 'default',
-       }
-
+       },
+          plugins: [
+       EditOnGithubPlugin.create(https://github.com/Jerrywang959/jerrywang_note/blob/master/docs/,
+         null,
+   function(file) {
+     if (file.indexOf('en') === -1) {
+       return '编辑'
+     } else {
+       return 'edit on git'
+     }]
 
 
       }
@@ -80,6 +88,15 @@
 
 <!-- emoji表情 -->
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+
+<!-- edit-on-github -->
+<script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github/index.js"></script>
+
+<!-- 放大土炮 -->
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+
+<!-- 外部脚本 -->
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
 
 <!-- katex -->
 <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>

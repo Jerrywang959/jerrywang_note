@@ -32,9 +32,9 @@ $$
 $$
 f(x) \approx f(x-x_k)+\nabla f(x-x_k)^{\top} (x-x_k)+\frac{1}{2} (x-x_k)^{\top} \nabla^{2} f(x-x_k) (x-x_k)
 $$
-如果令$\approx$变成$=$，对上式的右边对$x$求导数，并令其为0（即，使$f\prime(x)=0$)则有
+其中，$x$为$x_k$附近的一个点。如果令$\approx$变成$=$，对上式的右边对$x$求导数，并令其为0（即，使$f\prime(x)=0$)，则有
 $$
-\nabla f(x_k)^{\top} + \nabla^{2} f(x_k) (x-x_k)=0
+\nabla f(x_k) + \nabla^{2} f(x_k) (x-x_k)=0
 $$
 
 整理得到
@@ -56,6 +56,8 @@ $$
 2. 计算$g_{k}=\nabla f\left(x_{k}\right)$，若$\left\|g_{k}\right\| \leq \varepsilon$，则终止迭代
 3. 计算$G_{k}=\nabla^2 f\left(x_{k}\right)$，并求解线性方程组得解$d_{k}: G_{k} d=-g_{k}$
 4. 令$x_{k+1}=x_{k}+d_{k}, k=k+1$，并转2。
+
+也可以给定步长迭代。
 
 # 参考文献
 

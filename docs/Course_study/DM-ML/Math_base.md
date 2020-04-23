@@ -28,35 +28,36 @@ $$
 
 **思路：从一个点出发，寻找它附近的导数为0的点**
 
-一个点$$x_0$$附近的另外一个点$$x$$可以写成如下的二阶泰勒近似形式
+任意一个函数$f(x)$可以写成如下的形式：
 $$
-f(x) \approx f(x-x_0)+\nabla f(x-x_0)^{\top} (x-x_0)+\frac{1}{2} (x-x_0)^{\top} \nabla^{2} f(x-x_0) (x-x_0)
+f(x) \approx f(x-x_k)+\nabla f(x-x_k)^{\top} (x-x_k)+\frac{1}{2} (x-x_k)^{\top} \nabla^{2} f(x-x_k) (x-x_k)
 $$
-如果令$$\approx$$变成$$=$$，对两边同时对$$x$$求梯度，则有
+如果令$$\approx$$变成$$=$$，对上式的右边求导数，并令其为0（即，使$f\prime(x)=0$)则有
 $$
-\nabla(f(x))= \nabla f(x_0)^{\top} + \nabla^{2} f(x_0) (x-x_0)
-$$
-
-
-
-
-
-
-$$
-x=-\left[\nabla^{2} f(x_0)\right]^{-1} \nabla f(x_0)
+\nabla f(x_k)^{\top} + \nabla^{2} f(x_k) (x-x_k)=0
 $$
 
+整理得到
 
 
-若要$$f(x)$$处于极值状态，则要求$$x+v=x$$，即
 $$
-x_{t+1}=x_t+v_t
+x=x_k-\left[\nabla^{2} f(x_0)\right]^{-1} \nabla f(x_0)
 $$
-其中$$v_t$$为无穷小量，带入$$v_t$$,可得
+
+这个式子表明，在近似情况下，$x$是比$x_k$更接近于使得$f\prime(x)$为0的点
+
+因此我们可以得到如下的迭代过程
 $$
-x_{t+1}=x_{t}-\left[\nabla^{2} f\left(x_{t}\right)\right]^{-1} \nabla f\left(x_{t}\right)
+x_{k+1}=x_k-\left[\nabla^{2} f(x_0)\right]^{-1} \nabla f(x_0)
 $$
+牛顿法的一般迭代步骤如下：
+
+1. 给定终止误差值$0\leq\epsilon\ll1$，初始点$x\in R_n$，$k=0$
+2. 计算$g_{k}=\nabla f\left(x_{k}\right)$，若$\left\|g_{k}\right\| \leq \varepsilon$，则终止迭代
+3. 计算$G_{k}=\nabla^2 f\left(x_{k}\right)$，并求解线性方程组得解$d_{k}: G_{k} d=-g_{k}$
+4. 令$x_{k+1}=x_{k}+d_{k}, k=k+1$，并转2。
 
 # 参考文献
 
 1. [理解牛顿法](<https://zhuanlan.zhihu.com/p/37588590>)
+2. [优化算法——牛顿法(Newton Method)](<https://blog.csdn.net/google19890102/article/details/41087931>)

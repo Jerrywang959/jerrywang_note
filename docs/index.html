@@ -29,7 +29,13 @@
         name: "Jerry's Note",
         loadSidebar: true,
         maxLevel: 4,
-        search: 'auto',
+        search: {
+          paths: '/',
+          placeholder: 'Type to search',
+          noData: 'No Results!',
+          depth: 6,
+          hideOtherSidebarContent: false,
+          namespace: 'website-1'},
         coverpage: true,
         repo: 'https://github.com/Jerrywang959/jerrywang_note/',
         auto2top: true,
@@ -37,7 +43,6 @@
                 '/.*/_sidebar.md': '/_sidebar.md',
                 '/.*/.*/_sidebar.md': '/_sidebar.md'
               },
-
       count:{
         countable:true,
         fontsize:'0.9em',
@@ -54,7 +59,7 @@
 
 <!-- 美人鱼图 -->
       plantuml: {
-         skin: 'default',
+         skin: 'default'
        }
       }
   </script>

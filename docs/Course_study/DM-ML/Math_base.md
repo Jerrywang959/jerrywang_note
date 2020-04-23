@@ -46,7 +46,7 @@ $$
 
 这个式子表明，在近似情况下，从$x_k$来看，$x$是使得$f\prime(x)$为$0$的点，即最值点。
 
-那么我们可以认为，在不近似的情况下$x$是比$x_k$更加接近导数为0的点的点
+那么我们可以认为，在不近似的情况下$x$是比$x_k$更加接近导数为0的点的点。
 
 因此我们可以得到如下的迭代过程
 $$
@@ -65,3 +65,4 @@ $$
 
 1. [理解牛顿法](<https://zhuanlan.zhihu.com/p/37588590>)
 2. [优化算法——牛顿法(Newton Method)](<https://blog.csdn.net/google19890102/article/details/41087931>)
+3. [Newton's method](<https://en.wikipedia.org/wiki/Newton%27s_method>)

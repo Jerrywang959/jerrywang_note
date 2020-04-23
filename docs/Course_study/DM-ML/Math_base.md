@@ -32,7 +32,7 @@ $$
 $$
 f(x) \approx f(x-x_k)+\nabla f(x-x_k)^{\top} (x-x_k)+\frac{1}{2} (x-x_k)^{\top} \nabla^{2} f(x-x_k) (x-x_k)
 $$
-如果令$$\approx$$变成$$=$$，对上式的右边求导数，并令其为0（即，使$f\prime(x)=0$)则有
+如果令$\approx$变成$=$，对上式的右边求导数，并令其为0（即，使$f\prime(x)=0$)则有
 $$
 \nabla f(x_k)^{\top} + \nabla^{2} f(x_k) (x-x_k)=0
 $$

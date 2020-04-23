@@ -27,3 +27,7 @@
     * [Exchanges](Course_study/International_Finance/Exchanges.md)
   * [Random_process](Course_study/Random_process/README.md)
     * [Basics](Course_study/Random_process/Basics.md)
+  * [Merger_acquisitions](Course_study/M&A/README.md)
+  * [Times_series](Course_study/Times_series/README.md)
+    * [Introduction](Course_study/Times_series/Introduction.md)
+

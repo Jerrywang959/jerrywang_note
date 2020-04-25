@@ -48,7 +48,39 @@ f(x-\eta \nabla f(x)) \leq f(x)-\alpha \eta\|\nabla f(x)\|^{2}
 $$
 这种方法在实际操作中效果较佳
 
+## Convergence Analysis
 
+收敛性分析
+
+假设函数$f$是凸函数且可导，那么它是利普希茨连续的(Lipschitz continuous)：
+$$
+\|\nabla f(x)-\nabla f(y)\|_{2} \leq L\|x-y\|_{2}
+$$
+**定理**
+
+固定步长$\eta\le\frac{1}{L}$的梯度下降法满足
+$$
+f\left(x_{t}\right)-f^{*} \leq \frac{\left\|x_{0}-x^{*}\right\|_{2}^{2}}{2 t \eta}
+$$
+为了实现$f\left(x_{t}\right)-f^{*} \leq\epsilon$，我们需要$O(1 / \epsilon)$次的迭代
+
+回溯线搜索的有着相同的收敛速度
+
+### 强凸性下的收敛性分析
+
+假设$f$为强凸函数且$m$为常数
+
+**定理**
+
+固定步长$\eta\le2/(m+L)$或者回溯线搜索的梯度下降法满足
+$$
+f\left(x_{t}\right)-f^{*} \leq c^{t} \frac{L}{2}\left\|x_{0}-x^{*}\right\|_{2}^{2}
+$$
+此处$0<c<1$
+
+为了实现$f\left(x_{t}\right)-f^{*} \leq\epsilon$，我们需要$O(\log(1 / \epsilon))$次的迭代
+
+这被称为线性收敛
 
 ## Newton’s Method
 
@@ -88,6 +120,81 @@ $$
 4. 令$x_{k+1}=x_{k}+d_{k}, k=k+1$，并转2。
 
 也可以给定步长迭代。
+
+**牛顿法的条件**
+
+1. $f$是强凸函数
+2. $\nabla f(x),\nabla^2 f(x)$都是利普希茨连续的
+
+**牛顿法的性质**
+
+1. 二次收敛：收敛比率为$O(\log(\log(1 / \epsilon)))$
+2. 局部二次收敛:我们只保证经过若干步k后的二次收敛。
+3. 缺点：计算Hessian矩阵的逆矩阵比较耗费资源，后来出现了Quasi-Newton, Approximate Newton
+
+## Lagrangian Method
+
+从一个优化问题出发
+$$
+\begin{array}{l}
+\min\limits_{x} f(x) \\
+\text { s.t. } g_{i}(x) \leq 0, i=1,2, \ldots, m \\
+\quad h_{j}(x)=0, j=1,2, \ldots, n
+\end{array}
+$$
+我们定义拉格朗日函数为
+$$
+L(x, u, v)=f(x)+\sum_{i=1}^{m} u_{i} g_{i}(x)+\sum_{j=1}^{n} v_{j} h_{j}(x) \qquad ,u_i\ge0
+$$
+$\forall u\ge0 ,v $和可行的$x$，我们有
+$$
+L(x, u, v) \leq f(x)
+$$
+
+### 拉格朗日对偶函数
+
+$C$表示原始的可行解，$f^*$表示原始的最优解，在所有的$x$上最小化$L(x,u,v)$会得到$f^*$的更小的边界，$\forall u\ge0,v$，即
+$$
+f^{*} \geq \min _{x \in C} L(x, u, v) \geq \min _{x} L(x, u, v)=g(u, v)
+$$
+对偶函数的形式为
+$$
+g(u, v)=\min _{x} L(x, u, v)
+$$
+对于初始的问题，拉格朗日对偶问题为
+$$
+\begin{array}{l}
+\max\limits _{u, v} g(u, v) \\
+\text {s.t. } u \geq 0
+\end{array}
+$$
+
+#### 性质
+
+1. 弱对偶性
+   $$
+   f^*\ge g^*
+   $$
+
+2. 对偶问题是一个凸优化问题，即使原优化问题并不是凸的
+
+$$
+g(u, v)=\min _{x}\left\{f(x)+\sum_{i=1}^{m} u_{i} g_{i}(x)+\sum_{j=1}^{n} v_{j} h_{j}(x)\right\}
+$$
+
+3. 函数$g(u,v)$是凹的
+
+**强对偶性**
+
+在某些情况下，我们可以观察到$f^*=g^*$，这被称为强对偶性
+
+**斯莱特条件**（Slater’s condition，充分条件）
+
+如果原问题是凸优化问题，且至少存在一个严格可行的$x$，满足
+$$
+g_{1}(x)<0, \ldots, g_{m}(x)<0 \text { and } h_{1}(x)=\ldots h_{n}(x)=0
+$$
+那么强对偶性满足。
 
 # 参考文献
 

@@ -1,7 +1,7 @@
 
 # Jerry's note
 
-> Jerrwang的云端笔记
+> Jerrywang的云端笔记
 
 - 涉猎经济、数学、计算机
 

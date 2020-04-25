@@ -5,3 +5,8 @@
 2. Send a life photo to ta with your namedue day : Apr.23,10pm
 
 发到TA邮箱
+
+FINISHED
+
+
+

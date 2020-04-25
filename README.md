@@ -2,7 +2,7 @@
 
 Jerrywang的个人笔记repo
 
-<https://note.jerrywang.top>
+<https://jerrynote.osland.me>
 
 # Lisense
 

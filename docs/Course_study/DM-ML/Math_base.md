@@ -13,14 +13,91 @@ $$
 
 具有正交列的高矩阵
 
+如果一个矩阵$Q\in\mathbb{R}^{n\times m},(m>n)$并具有正交列，满足
+
+1. $Q^\top Q=I$
+2. $QQ^\top\not=I$
+
+则它为具有正交列的高矩阵
+
 ## General Matrix Norms
-一般的矩阵范数
+
+一个范数——norm是一个函数$\|\cdot\|$，满足：
+
+1. $\|A\|\geq0$，当且仅当$A=0$时等号成立
+2. $\|A+B\|\le\|A\|+\|B\|$
+3. $\|\alpha A\|=|a|\|A\|$
+
+### p-范数诱导的矩阵范数
+
+向量$\mathbf{x}$的p-范数
+$$
+\|\mathbf{x}\|_{p}=\left(\left|x_{1}\right|^{p}+\left|x_{2}\right|^{p}+\cdots+\left|x_{n}\right|^{p}\right)^{1 / p}
+$$
+矩阵的p范数
+$$
+\|\mathbf{A}\|_{p}=\max _{\mathbf{x} \neq 0} \frac{\|\mathbf{A} \mathbf{x}\|_{p}}{\|\mathbf{x}\|_{p}}
+$$
+例如，1-范数为
+$$
+\|\mathbf{A}\|_{1}=\max _{j} \sum_{i=1}^{n}\left|a_{i j}\right|
+$$
+这种由矢量范数诱导的矩阵范数称为 算子范数（operator norm）。
+
+### **弗罗贝尼乌斯范数**(Frobenius norm)
+
+矩阵$A\in\mathbb{R}^{m\times n}$的弗罗贝尼乌斯范数为
+
+$$
+\|\mathbf{A}\|_{F}=\left(\sum_{i=1}^{m} \sum_{j=1}^{n}\left|a_{i j}\right|^{2}\right)^{1 / 2}
+$$
+
+一些性质
+$$
+\|\mathbf{A}\|_{F}^{2}=\operatorname{trace}\left(\mathbf{A}^{\top} \mathbf{A}\right) \\
+\|\mathbf{A B}\|_{F}=\|\mathbf{A}\|_{F}\|\mathbf{B}\|_{F}
+$$
+正交乘法下不变性
+$$
+\|\mathbf{Q A}\|_{2}=\|\mathbf{A}\|_{2} \quad\|\mathbf{Q A}\|_{F}=\|\mathbf{A}\|_{F}
+$$
+其中$Q$是一个正交矩阵
 
 ## Eigenvalue Decomposition
-矩阵特征值
+
+矩阵特征分解
+
+对于一个方阵$A\in\mathbb{R}^{m\times n}$，我们称非0向量$\mathbf{x}\in\mathbb{R^n}$是其特征值$\lambda$对应的一个特征向量，如果：
+$$
+\mathbf{A x}=\lambda \mathbf{x}
+$$
+方针$A$的特征值分解为
+$$
+A=X \Lambda X^{-1}
+$$
+其中，$\mathbf{X}$是一个非奇异矩阵，且由$A$矩阵的特征向量组成；$\mathbf{\Lambda}$是一个对角线上的值为$A$矩阵的特征值的对角矩阵。
+
+Note:
+
+1. 不是所有的矩阵都有特征分解，一个矩阵有特征分解当且仅当它是可对角化的(diagonalizable)。
+2. 实对称矩阵的特征值都是实数，且它的特征分解具有$\mathbf{A}=\mathbf{Q} \mathbf{\Lambda} \mathbf{Q}^{\top}$的形式，其中$Q$为正交矩阵。
 
 ### Singular Value Decomposition
-奇异值分解
+奇异值分解 SVD
+
+每一个矩阵$\mathbf{A}\in\mathbb{R}$都有如下的奇异值分解形式
+$$
+\mathbf{A}=\mathbf{U} \boldsymbol{\Sigma} \mathbf{V}^{\top}
+$$
+其中，$\mathbf{U}\in\mathbb{R}^{m\times m}$和$\mathbf{V}\in\mathbb{R}^{n\times n}$为正交矩阵，$\boldsymbol{\Sigma} \in \mathbb{R}^{m \times n}$是一个对角线上的值为$\mathbf{A}$的奇异值的对角矩阵
+
+如果矩阵$\mathbf{A}$的秩为$r$，则$\mathbf{A}$的奇异值为
+$$
+\sigma_{1} \geq \sigma_{2} \geq \cdots \geq \sigma_{r} \geq \sigma_{r+1}=\ldots \sigma_{\min (m, n)}=0
+$$
+
+
+
 
 ## Newton’s Method
 
@@ -66,3 +143,7 @@ $$
 1. [理解牛顿法](<https://zhuanlan.zhihu.com/p/37588590>)
 2. [优化算法——牛顿法(Newton Method)](<https://blog.csdn.net/google19890102/article/details/41087931>)
 3. [Newton's method](<https://en.wikipedia.org/wiki/Newton%27s_method>)
+4. [可对角化矩阵](<https://zh.wikipedia.org/w/index.php?title=%E5%8F%AF%E5%AF%B9%E8%A7%92%E5%8C%96%E7%9F%A9%E9%98%B5&oldid=57619445> )
+5. [特征分解](<https://zh.wikipedia.org/wiki/%E7%89%B9%E5%BE%81%E5%88%86%E8%A7%A3>)
+6. [矩阵范数](<https://zh.wikipedia.org/wiki/%E7%9F%A9%E9%99%A3%E7%AF%84%E6%95%B8#p-%E8%8C%83%E6%95%B0%E8%AF%B1%E5%AF%BC%E7%9A%84%E7%9F%A9%E9%98%B5%E8%8C%83%E6%95%B0>)
+7. [算子范数](<https://zh.wikipedia.org/wiki/%E7%AE%97%E5%AD%90%E8%8C%83%E6%95%B0>)

@@ -26,9 +26,9 @@ $$
 
 梯度下降法
 
-### 一般迭代步骤
+**一般迭代步骤**
 
-目标函数 $\min\limits_x f(x)$
+目标函数 $\min\limits_x f(x)​$
 
 迭代：$x_{t+1}=x_{t}-\eta_{t} \nabla f\left(x_{t}\right)$
 

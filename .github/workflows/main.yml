@@ -20,13 +20,13 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    - name: Upload to oss
-      id: upload_to_oss
-      uses: tvrcgo/upload-to-oss@v0.1.1
+    - name: Deploy
+      uses: saltbo/uptoc@master
       with:
-        key-id: ${{ secrets.OSS_KEY_ID }}
-        key-secret: ${{ secrets.OSS_KEY_SECRET }}
-        region: oss-cn-shenzhen
+        driver: oss
+        endpoint: oss-cn-shenzhen.aliyuncs.com
         bucket: jerrysnote
-        asset-path: ./docs
-        target-path: ./
+        dist: private
+      env:
+        UPTOC_UPLOADER_KEYID: ${{ secrets.OSS_KEY_SECRET }}
+        UPTOC_UPLOADER_KEYSECRET: ${{ secrets.OSS_KEY_SECRET }}

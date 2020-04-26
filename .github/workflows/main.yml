@@ -23,6 +23,6 @@ jobs:
     - uses: manyuanrong/setup-ossutil@v1.0
       with:
         endpoint: "oss-cn-shenzhen.aliyuncs.com"
-        access-key-id: ${{ secrets.OSS_KEY_SECRET }}
-        access-key-secret: ${{ secrets.OSS_KEY_SECRET }}
-    - run: ossutil cp -rf ./docs oss://jerrysnote/./
+        access-key-id: "${{ secrets.OSS_KEY_SECRET }}"
+        access-key-secret: "${{ secrets.OSS_KEY_SECRET }}"
+    - run: ossutil cp -rf /docs oss://jerrysnote/

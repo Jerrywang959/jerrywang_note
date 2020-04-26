@@ -196,6 +196,12 @@ g_{1}(x)<0, \ldots, g_{m}(x)<0 \text { and } h_{1}(x)=\ldots h_{n}(x)=0
 $$
 那么强对偶性满足。
 
+
+
+![UTOOLS1587872480002.png](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/UTOOLS1587872480002.png)
+
+
+
 # 参考文献
 
 1. [理解牛顿法](<https://zhuanlan.zhihu.com/p/37588590>)

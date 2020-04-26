@@ -20,6 +20,7 @@
     * [Homework](Course_study/DM-ML/Homework.md)
     * [Math_base_matrix](Course_study/DM-ML/Math_base_matrix.md)
     * [Math_base_opt](Course_study/DM-ML/Math_base_opt.md)
+    * [Supervised_learning](Course_study/DM-ML/Supervised_learning.md)
   * [Game_Thoery](Course_study/Game_Thoery/README.md)
     * [Basics](Course_study/Game_Thoery/Basics.md)
   * [Financial_Lecture](Course_study/Financial_Lecture/README.md)

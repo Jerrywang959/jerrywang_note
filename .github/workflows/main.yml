@@ -25,4 +25,4 @@ jobs:
         endpoint: "oss-cn-shenzhen.aliyuncs.com"
         access-key-id: ${{ secrets.OSS_KEY_SECRET }}
         access-key-secret: ${{ secrets.OSS_KEY_SECRET }}
-    - run: ossutil cp -rf ./docs oss://jerrysnote/
+    - run: ossutil cp -rf ./docs oss://jerrysnote/./

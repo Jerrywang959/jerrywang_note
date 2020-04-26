@@ -20,13 +20,9 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    - name: Deploy
-      uses: saltbo/uptoc@master
+    - uses: manyuanrong/setup-ossutil@v1.0
       with:
-        driver: oss
-        endpoint: oss-cn-shenzhen.aliyuncs.com
-        bucket: jerrysnote
-        dist: private
-      env:
-        UPTOC_UPLOADER_KEYID: ${{ secrets.OSS_KEY_SECRET }}
-        UPTOC_UPLOADER_KEYSECRET: ${{ secrets.OSS_KEY_SECRET }}
+        endpoint: "oss-cn-shenzhen.aliyuncs.com"
+        access-key-id: ${{ secrets.OSS_KEY_SECRET }}
+        access-key-secret: ${{ secrets.OSS_KEY_SECRET }}
+    - run: ossutil cp -rf ./docs oss://jerrysnote/

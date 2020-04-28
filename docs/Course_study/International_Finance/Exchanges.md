@@ -161,16 +161,20 @@
 实际汇率（Real Exchange Rate）：名义汇率用两国价格水平调整后的汇率。即外国商品的本国商品相对价格，反映了本国商品的国际竞争力。名义汇率R与实际汇率e之间的关系是：
 
 $$
-\begin{aligned}
-&&\mathrm{Nominal \ exchange \ rate}&=&\mathrm{Nominal \ exchange \ rate}\times\frac{\mathrm{Foreign \ currency \ price}}{\mathrm{National \ currency \ price}}  
-\\ 
-&&\quad R&=&e\times\frac{P_f}{P}
-\end{aligned}
+\mathrm{Nominal \ exchange \ rate}=\mathrm{Nominal \ exchange \ rate}\times\frac{\mathrm{Foreign \ currency \ price}}{\mathrm{National \ currency \ price}}\\
+\quad R=e\times\frac{P_f}{P}
 $$
 
 
 
+# 汇率变化的主要影响因素
 
+国际收支状况
+通货膨胀差异
+利率差异
+经济增长差异
+中央银行干预
+预期因素
 
 
 

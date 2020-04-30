@@ -38,4 +38,5 @@
   * [Merger_acquisitions](Course_study/M&A/README.md)
   * [Times_series](Course_study/Times_series/README.md)
     * [Introduction](Course_study/Times_series/Introduction.md)
+    * [Math_base](Course_study/Times_series/Math_base.md)
 

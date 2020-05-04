@@ -25,6 +25,7 @@ summary(wine)
 ```
 
 
+```output
           Year          Price         WinterRain         AGST        HarvestRain   
      Min.   :1952   Min.   :6.205   Min.   :376.0   Min.   :14.98   Min.   : 38.0  
      1st Qu.:1960   1st Qu.:6.519   1st Qu.:536.0   1st Qu.:16.20   1st Qu.: 89.0  
@@ -39,6 +40,7 @@ summary(wine)
      Mean   :17.2   Mean   :49694  
      3rd Qu.:23.0   3rd Qu.:52894  
      Max.   :31.0   Max.   :54602  
+```
 
 
 画图以直观地反映变量之间的关系
@@ -62,7 +64,8 @@ summary(model1)
 ```
 
 
-​    
+```output
+    
     Call:
     lm(formula = Price ~ AGST, data = wine)
     
@@ -81,6 +84,7 @@ summary(model1)
     Multiple R-squared:  0.435,	Adjusted R-squared:  0.4105 
     F-statistic: 17.71 on 1 and 23 DF,  p-value: 0.000335
 
+```
 
 
 
@@ -116,7 +120,8 @@ summary(model2)
 ```
 
 
-​    
+```output
+    
     Call:
     lm(formula = Price ~ AGST + HarvestRain, data = wine)
     
@@ -136,6 +141,7 @@ summary(model2)
     Multiple R-squared:  0.7074,	Adjusted R-squared:  0.6808 
     F-statistic: 26.59 on 2 and 22 DF,  p-value: 1.347e-06
 
+```
 
 
 计算新模型的残差平方和
@@ -159,7 +165,8 @@ summary(model3)
 ```
 
 
-​    
+```output
+    
     Call:
     lm(formula = Price ~ AGST + HarvestRain + WinterRain + Age + 
         FrancePop, data = wine)
@@ -183,6 +190,7 @@ summary(model3)
     Multiple R-squared:  0.8294,	Adjusted R-squared:  0.7845 
     F-statistic: 18.47 on 5 and 19 DF,  p-value: 1.044e-06
 
+```
 
 
 
@@ -242,7 +250,8 @@ summary(model4)
 ```
 
 
-​    
+```output
+    
     Call:
     lm(formula = Price ~ AGST + HarvestRain + WinterRain + Age, data = wine)
     
@@ -264,6 +273,7 @@ summary(model4)
     Multiple R-squared:  0.8286,	Adjusted R-squared:  0.7943 
     F-statistic: 24.17 on 4 and 20 DF,  p-value: 2.036e-07
 
+```
 
 
 优化后的模型各个系数都很显著，这表明我们之前的模型是存在多重共线性，去掉一个变量后，很好的解决了这样的问题。   
@@ -277,7 +287,8 @@ summary(model5)
 ```
 
 
-​    
+```output
+    
     Call:
     lm(formula = Price ~ AGST + HarvestRain + WinterRain, data = wine)
     
@@ -298,6 +309,7 @@ summary(model5)
     Multiple R-squared:  0.7537,	Adjusted R-squared:  0.7185 
     F-statistic: 21.42 on 3 and 21 DF,  p-value: 1.359e-06
 
+```
 
 
 我们可以看到，r方有明显的下降，因此保留年龄这个变量是必要的。

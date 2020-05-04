@@ -238,6 +238,7 @@ summary(WHO)
 ```
 
 
+```output
                     Country                      Region     Population     
      Afghanistan        :  1   Africa               :46   Min.   :      1  
      Albania            :  1   Americas             :35   1st Qu.:   1696  
@@ -270,6 +271,7 @@ summary(WHO)
      3rd Qu.: 98.10              3rd Qu.: 97.90               
      Max.   :100.00              Max.   :100.00               
      NA's   :93                  NA's   :93                   
+```
 
 
 选择DataFrame的子数据生成新的DataFrame
@@ -386,8 +388,10 @@ summary(WHO$Under15)
 ```
 
 
+```output
        Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
       13.12   18.72   28.65   28.73   37.75   49.99 
+```
 
 
 ## which.min
@@ -518,11 +522,13 @@ table(WHO$Region)
 ```
 
 
-​    
+```output
+    
                    Africa              Americas Eastern Mediterranean 
                        46                    35                    22 
                    Europe       South-East Asia       Western Pacific 
                        53                    11                    27 
+```
 
 
 生成数值变量某一特征的汇总表，按照`WHO$Region`排序

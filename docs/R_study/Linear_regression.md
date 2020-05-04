@@ -76,7 +76,8 @@ lm.fit
 ```
 
 
-​    
+```output
+    
     Call:
     lm(formula = medv ~ lstat, data = Boston)
     
@@ -84,6 +85,7 @@ lm.fit
     (Intercept)        lstat  
           34.55        -0.95  
 
+```
 
 
 
@@ -92,7 +94,8 @@ summary(lm.fit)
 ```
 
 
-​    
+```output
+    
     Call:
     lm(formula = medv ~ lstat, data = Boston)
     
@@ -111,6 +114,7 @@ summary(lm.fit)
     Multiple R-squared:  0.5441,	Adjusted R-squared:  0.5432 
     F-statistic: 601.6 on 1 and 504 DF,  p-value: < 2.2e-16
 
+```
 
 
 找出存储在回归结果中的其他信息
@@ -262,11 +266,11 @@ plot(lm.fit)
 ```
 
 
-![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/Linear_regression_32_1.png ':size=500')
-
-
-
 ![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/Linear_regression_32_0.png ':size=500')
+
+
+
+![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/Linear_regression_32_1.png ':size=500')
 
 
 
@@ -274,7 +278,7 @@ plot(lm.fit)
 
 
 
-![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/Linear_regression_34_0.png ':size=500')
+![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/Linear_regression_32_3.png ':size=500')
 
 
 按照2 × 2的结构画成子图
@@ -286,7 +290,7 @@ plot(lm.fit)
 ```
 
 
-![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/Linear_regression_36_0.png ':size=500')
+![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/Linear_regression_34_0.png ':size=500')
 
 
 画诊断图中的第一个图
@@ -298,7 +302,7 @@ plot(predict(lm.fit), residuals(lm.fit))
 ```
 
 
-![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/Linear_regression_40_0.png ':size=500')
+![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/Linear_regression_36_0.png ':size=500')
 
 
 画拟合值和[学生化残差](https://en.wikipedia.org/wiki/Studentized_residual)之间的关系，学生化残差是残差除以其标准偏差的估计所得的商，是学生统计量的一种
@@ -309,7 +313,7 @@ plot(predict(lm.fit), rstudent(lm.fit))
 ```
 
 
-![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/Linear_regression_38_0.png ':size=500')
+![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/Linear_regression_40_0.png ':size=500')
 
 
 leverage是衡量一个观察值的独立变量值与其他观察值的相距多远的度量，`hatvalues()`以获得杠杆统计的结果
@@ -320,7 +324,7 @@ plot(hatvalues(lm.fit))
 ```
 
 
-![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/Linear_regression_32_3.png ':size=500')
+![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/Linear_regression_38_0.png ':size=500')
 
 
 找到最大杠杆点的索引
@@ -343,7 +347,8 @@ summary(lm.fit)
 ```
 
 
-​    
+```output
+    
     Call:
     lm(formula = medv ~ lstat + age, data = Boston)
     
@@ -363,6 +368,7 @@ summary(lm.fit)
     Multiple R-squared:  0.5513,	Adjusted R-squared:  0.5495 
     F-statistic:   309 on 2 and 503 DF,  p-value: < 2.2e-16
 
+```
 
 
 使用一个因变量和其他所有自变量回归
@@ -374,7 +380,8 @@ summary(lm.fit)
 ```
 
 
-​    
+```output
+    
     Call:
     lm(formula = medv ~ ., data = Boston)
     
@@ -405,6 +412,7 @@ summary(lm.fit)
     Multiple R-squared:  0.7406,	Adjusted R-squared:  0.7338 
     F-statistic: 108.1 on 13 and 492 DF,  p-value: < 2.2e-16
 
+```
 
 
 获得回归的$R^2$
@@ -444,7 +452,8 @@ summary(lm.fit1)
 ```
 
 
-​    
+```output
+    
     Call:
     lm(formula = medv ~ . - age, data = Boston)
     
@@ -474,6 +483,7 @@ summary(lm.fit1)
     Multiple R-squared:  0.7406,	Adjusted R-squared:  0.7343 
     F-statistic: 117.3 on 12 and 493 DF,  p-value: < 2.2e-16
 
+```
 
 
 也可以用`update()`函数来更新之前的模型
@@ -485,7 +495,8 @@ lm.fit1
 ```
 
 
-​    
+```output
+    
     Call:
     lm(formula = medv ~ crim + zn + indus + chas + nox + rm + dis + 
         rad + tax + ptratio + black + lstat, data = Boston)
@@ -498,6 +509,7 @@ lm.fit1
           lstat  
       -0.523852  
 
+```
 
 
 使用`*`以包括交互项
@@ -508,7 +520,8 @@ summary(lm(medv~lstat*age,data=Boston))
 ```
 
 
-​    
+```output
+    
     Call:
     lm(formula = medv ~ lstat * age, data = Boston)
     
@@ -529,6 +542,7 @@ summary(lm(medv~lstat*age,data=Boston))
     Multiple R-squared:  0.5557,	Adjusted R-squared:  0.5531 
     F-statistic: 209.3 on 3 and 502 DF,  p-value: < 2.2e-16
 
+```
 
 
 使用`*`以只对交互项回归
@@ -539,7 +553,8 @@ summary(lm(medv~lstat:age,data=Boston))
 ```
 
 
-​    
+```output
+    
     Call:
     lm(formula = medv ~ lstat:age, data = Boston)
     
@@ -558,6 +573,7 @@ summary(lm(medv~lstat:age,data=Boston))
     Multiple R-squared:  0.4501,	Adjusted R-squared:  0.449 
     F-statistic: 412.4 on 1 and 504 DF,  p-value: < 2.2e-16
 
+```
 
 
 # 加入解释变量的非线性项
@@ -571,7 +587,8 @@ summary(lm.fit2)
 ```
 
 
-​    
+```output
+    
     Call:
     lm(formula = medv ~ lstat + I(lstat^2), data = Boston)
     
@@ -591,6 +608,7 @@ summary(lm.fit2)
     Multiple R-squared:  0.6407,	Adjusted R-squared:  0.6393 
     F-statistic: 448.5 on 2 and 503 DF,  p-value: < 2.2e-16
 
+```
 
 
 `anova()`函数对两个模型进行方差分析
@@ -603,7 +621,8 @@ anova(lm.fit,lm.fit2)
 ```
 
 
-​    
+```output
+    
     Call:
     lm(formula = medv ~ lstat, data = Boston)
     
@@ -611,6 +630,7 @@ anova(lm.fit,lm.fit2)
     (Intercept)        lstat  
           34.55        -0.95  
 
+```
 
 
 
@@ -637,7 +657,8 @@ summary(lm.fit5)
 ```
 
 
-​    
+```output
+    
     Call:
     lm(formula = medv ~ poly(lstat, 5), data = Boston)
     
@@ -660,6 +681,7 @@ summary(lm.fit5)
     Multiple R-squared:  0.6817,	Adjusted R-squared:  0.6785 
     F-statistic: 214.2 on 5 and 500 DF,  p-value: < 2.2e-16
 
+```
 
 
 # 定性预测因子
@@ -724,7 +746,8 @@ summary(lm.fit)
 ```
 
 
-​    
+```output
+    
     Call:
     lm(formula = Sales ~ . + Income:Advertising + Price:Age, data = Carseats)
     
@@ -755,6 +778,7 @@ summary(lm.fit)
     Multiple R-squared:  0.8761,	Adjusted R-squared:  0.8719 
     F-statistic:   210 on 13 and 386 DF,  p-value: < 2.2e-16
 
+```
 
 
 当我们对类型变量回归时，会自动生产虚拟变量，比如：
@@ -766,7 +790,8 @@ summary(lm.fit)
 ```
 
 
-​    
+```output
+    
     Call:
     lm(formula = Sales ~ . + Income:Advertising + Price:Age, data = Carseats)
     
@@ -797,6 +822,7 @@ summary(lm.fit)
     Multiple R-squared:  0.8761,	Adjusted R-squared:  0.8719 
     F-statistic:   210 on 13 and 386 DF,  p-value: < 2.2e-16
 
+```
 
 
 用`contrasts()`函数以得到R生产的虚拟变量的具体情况

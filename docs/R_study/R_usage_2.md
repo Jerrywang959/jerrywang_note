@@ -431,7 +431,7 @@ plot(WHO$GNI, WHO$FertilityRate)
 ```
 
 
-![](R_usage_2_files/R_usage_2_36_0.png ':size=500')
+![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/R_usage_2_36_0.png ':size=500')
 
 
 ## subset
@@ -483,7 +483,7 @@ hist(WHO$LifeExpectancy)
 ```
 
 
-![](R_usage_2_files/R_usage_2_42_0.png ':size=500')
+![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/R_usage_2_42_0.png ':size=500')
 
 
 ## 箱形图
@@ -495,7 +495,7 @@ boxplot(WHO$LifeExpectancy ~ WHO$Region)
 ```
 
 
-![](R_usage_2_files/R_usage_2_44_0.png ':size=500')
+![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/R_usage_2_44_0.png ':size=500')
 
 
 对图像做简单的注释
@@ -506,7 +506,7 @@ boxplot(WHO$LifeExpectancy ~ WHO$Region, xlab = "Region", ylab = "Life Expectanc
 ```
 
 
-![](R_usage_2_files/R_usage_2_46_0.png ':size=500')
+![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/R_usage_2_46_0.png ':size=500')
 
 
 ## 选择并生成表
@@ -518,7 +518,7 @@ table(WHO$Region)
 ```
 
 
-    
+​    
                    Africa              Americas Eastern Mediterranean 
                        46                    35                    22 
                    Europe       South-East Asia       Western Pacific 

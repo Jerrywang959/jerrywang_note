@@ -50,7 +50,7 @@ abline(h = mean(wine$Price), col = "red")
 ```
 
 
-![](Linear_reg_application_files/Linear_reg_application_4_0.png ':size=500')
+![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/Linear_reg_application_4_0.png ':size=500')
 
 
 # 建立线性模型
@@ -62,7 +62,7 @@ summary(model1)
 ```
 
 
-    
+​    
     Call:
     lm(formula = Price ~ AGST, data = wine)
     
@@ -91,7 +91,7 @@ abline(model1, col = "green")
 ```
 
 
-![](Linear_reg_application_files/Linear_reg_application_7_0.png ':size=500')
+![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/Linear_reg_application_7_0.png ':size=500')
 
 
 ## 残差平方和
@@ -116,7 +116,7 @@ summary(model2)
 ```
 
 
-    
+​    
     Call:
     lm(formula = Price ~ AGST + HarvestRain, data = wine)
     
@@ -159,7 +159,7 @@ summary(model3)
 ```
 
 
-    
+​    
     Call:
     lm(formula = Price ~ AGST + HarvestRain + WinterRain + Age + 
         FrancePop, data = wine)
@@ -230,7 +230,7 @@ plot(wine$Age, wine$FrancePop)
 ```
 
 
-![](Linear_reg_application_files/Linear_reg_application_20_0.png ':size=500')
+![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/Linear_reg_application_20_0.png ':size=500')
 
 
 在模型中减少一个变量，直观上我们觉得取消法国人口更加合适
@@ -242,7 +242,7 @@ summary(model4)
 ```
 
 
-    
+​    
     Call:
     lm(formula = Price ~ AGST + HarvestRain + WinterRain + Age, data = wine)
     
@@ -277,7 +277,7 @@ summary(model5)
 ```
 
 
-    
+​    
     Call:
     lm(formula = Price ~ AGST + HarvestRain + WinterRain, data = wine)
     

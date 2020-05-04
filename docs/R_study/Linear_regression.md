@@ -76,7 +76,7 @@ lm.fit
 ```
 
 
-    
+​    
     Call:
     lm(formula = medv ~ lstat, data = Boston)
     
@@ -92,7 +92,7 @@ summary(lm.fit)
 ```
 
 
-    
+​    
     Call:
     lm(formula = medv ~ lstat, data = Boston)
     
@@ -214,7 +214,7 @@ abline(lm.fit)
 ```
 
 
-![](Linear_regression_files/Linear_regression_25_0.png ':size=500')
+![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/Linear_regression_25_0.png ':size=500')
 
 
 给直线加粗或者添加颜色
@@ -226,7 +226,7 @@ abline(lm.fit,lwd=3,col="red")
 ```
 
 
-![](Linear_regression_files/Linear_regression_27_0.png ':size=500')
+![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/Linear_regression_27_0.png ':size=500')
 
 
 `plot`中的`pch`参数代表了画出的点的形状，具体如下
@@ -238,7 +238,7 @@ plot(Boston$lstat,Boston$medv,pch=25)
 ```
 
 
-![](Linear_regression_files/Linear_regression_29_0.png ':size=500')
+![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/Linear_regression_29_0.png ':size=500')
 
 
 
@@ -247,7 +247,7 @@ plot(1:20,1:20,pch=1:20)
 ```
 
 
-![](Linear_regression_files/Linear_regression_30_0.png ':size=500')
+![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/Linear_regression_30_0.png ':size=500')
 
 
 画出线性回归结果诊断图，包括   
@@ -262,19 +262,19 @@ plot(lm.fit)
 ```
 
 
-![](Linear_regression_files/Linear_regression_32_0.png ':size=500')
+![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/Linear_regression_32_1.png ':size=500')
 
 
 
-![](Linear_regression_files/Linear_regression_32_1.png ':size=500')
+![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/Linear_regression_32_0.png ':size=500')
 
 
 
-![](Linear_regression_files/Linear_regression_32_2.png ':size=500')
+![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/Linear_regression_32_2.png ':size=500')
 
 
 
-![](Linear_regression_files/Linear_regression_32_3.png ':size=500')
+![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/Linear_regression_34_0.png ':size=500')
 
 
 按照2 × 2的结构画成子图
@@ -286,7 +286,7 @@ plot(lm.fit)
 ```
 
 
-![](Linear_regression_files/Linear_regression_34_0.png ':size=500')
+![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/Linear_regression_36_0.png ':size=500')
 
 
 画诊断图中的第一个图
@@ -298,7 +298,7 @@ plot(predict(lm.fit), residuals(lm.fit))
 ```
 
 
-![](Linear_regression_files/Linear_regression_36_0.png ':size=500')
+![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/Linear_regression_40_0.png ':size=500')
 
 
 画拟合值和[学生化残差](https://en.wikipedia.org/wiki/Studentized_residual)之间的关系，学生化残差是残差除以其标准偏差的估计所得的商，是学生统计量的一种
@@ -309,7 +309,7 @@ plot(predict(lm.fit), rstudent(lm.fit))
 ```
 
 
-![](Linear_regression_files/Linear_regression_38_0.png ':size=500')
+![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/Linear_regression_38_0.png ':size=500')
 
 
 leverage是衡量一个观察值的独立变量值与其他观察值的相距多远的度量，`hatvalues()`以获得杠杆统计的结果
@@ -320,7 +320,7 @@ plot(hatvalues(lm.fit))
 ```
 
 
-![](Linear_regression_files/Linear_regression_40_0.png ':size=500')
+![](https://mypictuchuang.oss-cn-shenzhen.aliyuncs.com/Linear_regression_32_3.png ':size=500')
 
 
 找到最大杠杆点的索引
@@ -343,7 +343,7 @@ summary(lm.fit)
 ```
 
 
-    
+​    
     Call:
     lm(formula = medv ~ lstat + age, data = Boston)
     
@@ -374,7 +374,7 @@ summary(lm.fit)
 ```
 
 
-    
+​    
     Call:
     lm(formula = medv ~ ., data = Boston)
     
@@ -444,7 +444,7 @@ summary(lm.fit1)
 ```
 
 
-    
+​    
     Call:
     lm(formula = medv ~ . - age, data = Boston)
     
@@ -485,7 +485,7 @@ lm.fit1
 ```
 
 
-    
+​    
     Call:
     lm(formula = medv ~ crim + zn + indus + chas + nox + rm + dis + 
         rad + tax + ptratio + black + lstat, data = Boston)
@@ -508,7 +508,7 @@ summary(lm(medv~lstat*age,data=Boston))
 ```
 
 
-    
+​    
     Call:
     lm(formula = medv ~ lstat * age, data = Boston)
     
@@ -539,7 +539,7 @@ summary(lm(medv~lstat:age,data=Boston))
 ```
 
 
-    
+​    
     Call:
     lm(formula = medv ~ lstat:age, data = Boston)
     
@@ -571,7 +571,7 @@ summary(lm.fit2)
 ```
 
 
-    
+​    
     Call:
     lm(formula = medv ~ lstat + I(lstat^2), data = Boston)
     
@@ -603,7 +603,7 @@ anova(lm.fit,lm.fit2)
 ```
 
 
-    
+​    
     Call:
     lm(formula = medv ~ lstat, data = Boston)
     
@@ -637,7 +637,7 @@ summary(lm.fit5)
 ```
 
 
-    
+​    
     Call:
     lm(formula = medv ~ poly(lstat, 5), data = Boston)
     
@@ -724,7 +724,7 @@ summary(lm.fit)
 ```
 
 
-    
+​    
     Call:
     lm(formula = Sales ~ . + Income:Advertising + Price:Age, data = Carseats)
     
@@ -766,7 +766,7 @@ summary(lm.fit)
 ```
 
 
-    
+​    
     Call:
     lm(formula = Sales ~ . + Income:Advertising + Price:Age, data = Carseats)
     

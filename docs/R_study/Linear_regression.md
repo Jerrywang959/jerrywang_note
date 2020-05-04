@@ -15,20 +15,24 @@ ISLR:R中应用统计学习入门的数据
 install.packages("ISLR")
 ```
 
+```output
     Installing package into ‘/home/jerrywang/R/x86_64-pc-linux-gnu-library/3.6’
     (as ‘lib’ is unspecified)
     
 
+```
 
 
 ```R
 install.packages("MASS")
 ```
 
+```output
     Installing package into ‘/home/jerrywang/R/x86_64-pc-linux-gnu-library/3.6’
     (as ‘lib’ is unspecified)
     
 
+```
 
 加载包并删除全部变量
 
@@ -210,7 +214,7 @@ abline(lm.fit)
 ```
 
 
-![png](Linear_regression_files/Linear_regression_25_0.png)
+![](Linear_regression_files/Linear_regression_25_0.png ':size=500')
 
 
 给直线加粗或者添加颜色
@@ -222,7 +226,7 @@ abline(lm.fit,lwd=3,col="red")
 ```
 
 
-![png](Linear_regression_files/Linear_regression_27_0.png)
+![](Linear_regression_files/Linear_regression_27_0.png ':size=500')
 
 
 `plot`中的`pch`参数代表了画出的点的形状，具体如下
@@ -234,7 +238,7 @@ plot(Boston$lstat,Boston$medv,pch=25)
 ```
 
 
-![png](Linear_regression_files/Linear_regression_29_0.png)
+![](Linear_regression_files/Linear_regression_29_0.png ':size=500')
 
 
 
@@ -243,7 +247,7 @@ plot(1:20,1:20,pch=1:20)
 ```
 
 
-![png](Linear_regression_files/Linear_regression_30_0.png)
+![](Linear_regression_files/Linear_regression_30_0.png ':size=500')
 
 
 画出线性回归结果诊断图，包括   
@@ -258,19 +262,19 @@ plot(lm.fit)
 ```
 
 
-![png](Linear_regression_files/Linear_regression_32_0.png)
+![](Linear_regression_files/Linear_regression_32_0.png ':size=500')
 
 
 
-![png](Linear_regression_files/Linear_regression_32_1.png)
+![](Linear_regression_files/Linear_regression_32_1.png ':size=500')
 
 
 
-![png](Linear_regression_files/Linear_regression_32_2.png)
+![](Linear_regression_files/Linear_regression_32_2.png ':size=500')
 
 
 
-![png](Linear_regression_files/Linear_regression_32_3.png)
+![](Linear_regression_files/Linear_regression_32_3.png ':size=500')
 
 
 按照2 × 2的结构画成子图
@@ -282,7 +286,7 @@ plot(lm.fit)
 ```
 
 
-![png](Linear_regression_files/Linear_regression_34_0.png)
+![](Linear_regression_files/Linear_regression_34_0.png ':size=500')
 
 
 画诊断图中的第一个图
@@ -294,7 +298,7 @@ plot(predict(lm.fit), residuals(lm.fit))
 ```
 
 
-![png](Linear_regression_files/Linear_regression_36_0.png)
+![](Linear_regression_files/Linear_regression_36_0.png ':size=500')
 
 
 画拟合值和[学生化残差](https://en.wikipedia.org/wiki/Studentized_residual)之间的关系，学生化残差是残差除以其标准偏差的估计所得的商，是学生统计量的一种
@@ -305,7 +309,7 @@ plot(predict(lm.fit), rstudent(lm.fit))
 ```
 
 
-![png](Linear_regression_files/Linear_regression_38_0.png)
+![](Linear_regression_files/Linear_regression_38_0.png ':size=500')
 
 
 leverage是衡量一个观察值的独立变量值与其他观察值的相距多远的度量，`hatvalues()`以获得杠杆统计的结果
@@ -316,7 +320,7 @@ plot(hatvalues(lm.fit))
 ```
 
 
-![png](Linear_regression_files/Linear_regression_40_0.png)
+![](Linear_regression_files/Linear_regression_40_0.png ':size=500')
 
 
 找到最大杠杆点的索引
@@ -658,7 +662,7 @@ summary(lm.fit5)
 
 
 
-# 定性解释变量
+# 定性预测因子
 
 查看Carseats数据的变量
 
@@ -682,6 +686,7 @@ names(Carseats)
 str(Carseats)
 ```
 
+```output
     'data.frame':	400 obs. of  11 variables:
      $ Sales      : num  9.5 11.22 10.06 7.4 4.15 ...
      $ CompPrice  : num  138 111 113 117 141 124 115 136 132 132 ...
@@ -695,6 +700,7 @@ str(Carseats)
      $ Urban      : Factor w/ 2 levels "No","Yes": 2 2 2 2 2 1 2 2 1 1 ...
      $ US         : Factor w/ 2 levels "No","Yes": 2 2 2 2 1 2 1 2 1 2 ...
 
+```
 
 
 ```R
@@ -816,5 +822,3 @@ contrasts(Carseats$ShelveLoc)
 
 
 这表示，截距项包含了`Bad`的对被解释变量的影响，`ShelveLocGood`系数的含义是`Good`与`Bad`的差异，`ShelveLocMedium`系数的含义是`Medium`与`Bad`的差异
-
-

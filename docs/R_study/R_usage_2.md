@@ -210,6 +210,7 @@ WHO
 str(WHO)
 ```
 
+```output
     'data.frame':	194 obs. of  13 variables:
      $ Country                      : Factor w/ 194 levels "Afghanistan",..: 1 2 3 4 5 6 7 8 9 10 ...
      $ Region                       : Factor w/ 6 levels "Africa","Americas",..: 3 4 1 4 1 2 2 4 6 4 ...
@@ -225,6 +226,7 @@ str(WHO)
      $ PrimarySchoolEnrollmentMale  : num  NA NA 98.2 78.4 93.1 91.1 NA NA 96.9 NA ...
      $ PrimarySchoolEnrollmentFemale: num  NA NA 96.4 79.4 78.2 84.5 NA NA 97.5 NA ...
 
+```
 
 可以看出，这是一个包含194个观测值和13个变量的DataFrame，变量名显示在左列，右边显示的是相应变量的类型，包括Factor、num、int。Factor应该是类型变量，显示了包含的类型的个数。num应该为一般的数字，int为整数
 
@@ -278,6 +280,7 @@ SEA = subset(WHO, Region == "South-East Asia")
 str(SEA)
 ```
 
+```output
     'data.frame':	11 obs. of  13 variables:
      $ Country                      : Factor w/ 194 levels "Afghanistan",..: 14 20 47 78 79 104 117 120 163 171 ...
      $ Region                       : Factor w/ 6 levels "Africa","Americas",..: 5 5 5 5 5 5 5 5 5 5 ...
@@ -293,6 +296,7 @@ str(SEA)
      $ PrimarySchoolEnrollmentMale  : num  NA 88.3 NA NA NA 96.5 NA NA 93.9 NA ...
      $ PrimarySchoolEnrollmentFemale: num  NA 91.5 NA NA NA 96.5 NA NA 94.4 NA ...
 
+```
 
 ## 保存csv文件
 
@@ -427,7 +431,7 @@ plot(WHO$GNI, WHO$FertilityRate)
 ```
 
 
-![png](R_usage_2_files/R_usage_2_36_0.png)
+![](R_usage_2_files/R_usage_2_36_0.png ':size=500')
 
 
 ## subset
@@ -479,7 +483,7 @@ hist(WHO$LifeExpectancy)
 ```
 
 
-![png](R_usage_2_files/R_usage_2_42_0.png)
+![](R_usage_2_files/R_usage_2_42_0.png ':size=500')
 
 
 ## 箱形图
@@ -491,7 +495,7 @@ boxplot(WHO$LifeExpectancy ~ WHO$Region)
 ```
 
 
-![png](R_usage_2_files/R_usage_2_44_0.png)
+![](R_usage_2_files/R_usage_2_44_0.png ':size=500')
 
 
 对图像做简单的注释
@@ -502,7 +506,7 @@ boxplot(WHO$LifeExpectancy ~ WHO$Region, xlab = "Region", ylab = "Life Expectanc
 ```
 
 
-![png](R_usage_2_files/R_usage_2_46_0.png)
+![](R_usage_2_files/R_usage_2_46_0.png ':size=500')
 
 
 ## 选择并生成表

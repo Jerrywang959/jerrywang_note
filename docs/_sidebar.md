@@ -20,6 +20,7 @@
   * [R_usage_2](R_study/R_usage_2.md)
   * [Linear_regression](R_study/Linear_regression.md)
   * [Linear_reg_application](R_study/Linear_reg_application.md)
+  * [Logistic_reg](R_study/Logistic_reg.md)
 * [**Course_study**](Course_study/README.md)
   * [DM-ML](Course_study/DM-ML/README.md)
     * [Homework](Course_study/DM-ML/Homework.md)

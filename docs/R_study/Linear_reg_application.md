@@ -2,7 +2,7 @@
 # 读取并初步探索数据
 
 
-```julia
+```R
 wine = read.csv("Wine.csv")
 str(wine)
 ```
@@ -20,7 +20,7 @@ str(wine)
 ```
 
 
-```julia
+```R
 summary(wine)
 ```
 
@@ -44,7 +44,7 @@ summary(wine)
 画图以直观地反映变量之间的关系
 
 
-```julia
+```R
 plot(wine$AGST, wine$Price)
 abline(h = mean(wine$Price), col = "red")
 ```
@@ -56,7 +56,7 @@ abline(h = mean(wine$Price), col = "red")
 # 建立线性模型
 
 
-```julia
+```R
 model1 = lm(Price ~ AGST, data = wine)
 summary(model1)
 ```
@@ -84,7 +84,7 @@ summary(model1)
 
 
 
-```julia
+```R
 plot(wine$AGST, wine$Price)
 abline(h = mean(wine$Price), col = "red")
 abline(model1, col = "green")
@@ -98,7 +98,7 @@ abline(model1, col = "green")
 计算残差平方和
 
 
-```julia
+```R
 SSE1 = sum(model1$residuals^2)
 SSE1
 ```
@@ -110,7 +110,7 @@ SSE1
 增加一个解释变量
 
 
-```julia
+```R
 model2 = lm(Price ~ AGST + HarvestRain, data = wine)
 summary(model2)
 ```
@@ -141,7 +141,7 @@ summary(model2)
 计算新模型的残差平方和
 
 
-```julia
+```R
 SSE2 = sum(model2$residuals^2)
 SSE2
 ```
@@ -153,7 +153,7 @@ SSE2
 再次增加变量并计算残差平方和
 
 
-```julia
+```R
 model3 = lm(Price ~ AGST + HarvestRain + WinterRain + Age + FrancePop, data = wine)
 summary(model3)
 ```
@@ -186,7 +186,7 @@ summary(model3)
 
 
 
-```julia
+```R
 SSE3 = sum(model3$residuals^2)
 SSE3
 ```
@@ -199,7 +199,7 @@ SSE3
 之前的模型中，年龄和法国人口都是微不足道的，我们怀疑存在多重共线性，因此我们先用`cor()`函数来计算数据中每个变量之间的相关系数
 
 
-```julia
+```R
 cor(wine)
 ```
 
@@ -225,7 +225,7 @@ cor(wine)
 `FrancePop`和`Age`的相关系数接近-1，存在很明显的相关性，画图以直观地表现这一结果
 
 
-```julia
+```R
 plot(wine$Age, wine$FrancePop)
 ```
 
@@ -236,7 +236,7 @@ plot(wine$Age, wine$FrancePop)
 在模型中减少一个变量，直观上我们觉得取消法国人口更加合适
 
 
-```julia
+```R
 model4 = lm(Price ~ AGST + HarvestRain + WinterRain + Age, data = wine)
 summary(model4)
 ```
@@ -271,7 +271,7 @@ summary(model4)
 为了进一步的优化模型，我们可以选择删除一些变量，让我们尝试先来同时删除年龄和人口
 
 
-```julia
+```R
 model5 = lm(Price ~ AGST + HarvestRain + WinterRain, data = wine)
 summary(model5)
 ```
@@ -306,7 +306,7 @@ summary(model5)
 现在我们将使用我们训练好的模型来用测试集检验
 
 
-```julia
+```R
 wineTest = read.csv("Wine_Test.csv")
 str(wineTest)
 ```
@@ -326,7 +326,7 @@ str(wineTest)
 我们可以调用`predict()`函数来进行检验
 
 
-```julia
+```R
 predictTest = predict(model4, newdata = wineTest)
 predictTest
 ```
@@ -344,7 +344,7 @@ predictTest
 为了评估我们预测的准确性，我们可以计算样本外R平方。
 
 
-```julia
+```R
 SSE = sum((wineTest$Price - predictTest)^2)
 SST = sum((wineTest$Price - mean(wine$Price))^2)
 1 - SSE/SST
